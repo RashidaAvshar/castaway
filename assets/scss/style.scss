@@ -20,6 +20,7 @@ $button-color: #118DA8;
 $card-background-color:#000000;
 $star-color: #FCFF51;
 
+
 @mixin display {
     display: flex;
     flex-direction: row;
@@ -178,12 +179,11 @@ section{
             line-height: 27px;
             &:hover{
                 cursor: pointer;
-                 text-decoration: underline $hover-color;
-            
+                text-decoration: underline $hover-color;
+                box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+                color: rgba(5, 33, 109, 0.638);
             }
-
         }
-
     }
     .all-cards{
         width: 100%;
@@ -221,8 +221,8 @@ section{
                     &:hover{
                         cursor: pointer;
                         text-decoration: underline $hover-color;
+                        
                     }
-
                 }
                 .second-button{
                     width: 136px;
@@ -238,7 +238,6 @@ section{
                         cursor: pointer;
                         text-decoration: underline $hover-color;
                     }
-
                 }
                 .order{
                     @include text-info;
@@ -273,11 +272,12 @@ section{
                     background-color: $button-color;
                     &:hover{
                         cursor: pointer;
+                        box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+                        color: rgba(5, 33, 109, 0.638);
                     }
                 }
             }
         }
-
     }
 }
 // third section
@@ -290,21 +290,23 @@ section{
     .left-side{
         display: flex;
         flex-direction: column;
-
-        span{
+        #arrow{
             background-color: $button-color;
-            border-radius: 400px;
+            border-radius: 50%;
             width: 112px;
             height: 112px;
             margin-bottom: 20px;
-            a{
-                i{
-                width: 38px;
-                height: 71px;
-                margin-top: 51px;
-                margin-left: 13px;
-                color: $link-color;
+            border: 1px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
             }
+            i{
+            color: $link-color;
+            font-size: 40px;
+            scale: 2.2 1.1; 
         }
     }
         a{
@@ -315,7 +317,6 @@ section{
             &:hover{
                 cursor: pointer;
                 text-decoration: underline  $button-color;
-
             }
         }
         h2{
@@ -343,7 +344,6 @@ section{
 
 }
 // section 4
-
 .section-forth{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -356,8 +356,6 @@ section{
         padding: 60px 60px 75px 60px;
         display: flex;
         justify-content: space-between;
-        
-        
         p{
             @include text-info;
             font-size: 18px;
@@ -374,11 +372,9 @@ section{
                 margin-bottom: 28px;
                 width: 431px;
             }
-            
             form{
                 display: flex;
                 flex-direction: column;
-                
                 input{
                     width: 522px;
                     height: 82px;
@@ -390,7 +386,6 @@ section{
                     color: $link-color;
                     margin-bottom: 20px;
                     padding-left: 19px;
-                    
                 }
                 button{
                     width: 87px;
@@ -404,23 +399,22 @@ section{
                     color: $link-color;
                     &:hover{
                         cursor: pointer;
+                        box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+                        color: rgba(5, 33, 109, 0.638);
                     }
-
                 }
             }
-            
         }
 }
-
 // section 5
-
 .section-fifth{
     margin-top: 100px;
     margin-bottom: 200.11px;
     .sec5-card{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;  
+        justify-content: space-between;      
     .box{
         width: 423px;
         height: 321px;
@@ -428,8 +422,13 @@ section{
         background-color: $card-background-color;
         display: flex;
         flex-direction: column;
-        padding: 54px 60px 51px 50px;
-        margin: 16px;
+        padding: 40px 20px 50px 50px;
+        margin: 0 5px 70px 5px;
+        &:hover{
+            box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+            color: rgba(5, 33, 109, 0.638);
+        }
+
         a{
             .star{
                 width: 17.11px;
@@ -459,7 +458,62 @@ section{
     }
 }
 }
-
 // end main
 
 // start footer
+footer{
+    background-color: $back-header-color;
+    .container{
+        @include container(100%, auto);
+        // border: 2px solid red;
+    }
+    .footer{
+        display: flex;
+        .social-first{
+            margin-top: 18px;
+            a{
+            color: $link-color;
+            margin-right: 17px;
+            }
+        }
+        
+        .logo-social{
+            margin-right: 239.38px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            margin-left: 160px;
+            margin-bottom: 127px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 27px;
+            a{
+                color: $link-color;
+            }
+        }
+
+    }
+    .social{
+        margin-left: 21px;
+        i{
+            margin-right: 15px;
+            font-size: 20px;
+        }
+            margin-right: 10px;
+            .fa-brands{
+                color: green;
+            }
+            .fa-soundcloud{
+                color: #FF7602; 
+            }
+            .fa-podcast{
+                color: #F452FF;
+            }
+            .fa-tower-cell{
+              color: #FC7E0F;
+            }
+    }
+
+}

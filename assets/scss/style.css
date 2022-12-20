@@ -145,6 +145,8 @@ section .section-first .link-icon .social .fa-tower-cell {
   cursor: pointer;
   -webkit-text-decoration: underline rgb(17, 141, 168);
           text-decoration: underline rgb(17, 141, 168);
+  box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+  color: rgba(5, 33, 109, 0.638);
 }
 .section-second .all-cards {
   width: 100%;
@@ -244,6 +246,8 @@ section .section-first .link-icon .social .fa-tower-cell {
 }
 .section-second .all-cards .card .card-details .open:hover {
   cursor: pointer;
+  box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+  color: rgba(5, 33, 109, 0.638);
 }
 
 .section-third {
@@ -257,19 +261,24 @@ section .section-first .link-icon .social .fa-tower-cell {
   display: flex;
   flex-direction: column;
 }
-.section-third .left-side span {
+.section-third .left-side #arrow {
   background-color: #118DA8;
-  border-radius: 400px;
+  border-radius: 50%;
   width: 112px;
   height: 112px;
   margin-bottom: 20px;
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.section-third .left-side span a i {
-  width: 38px;
-  height: 71px;
-  margin-top: 51px;
-  margin-left: 13px;
+.section-third .left-side #arrow:hover {
+  box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+}
+.section-third .left-side #arrow i {
   color: #FFFFFF;
+  font-size: 40px;
+  scale: 2.2 1.1;
 }
 .section-third .left-side a {
   font-family: "Montserrat", sans-serif;
@@ -368,6 +377,8 @@ section .section-first .link-icon .social .fa-tower-cell {
 }
 .section-forth .box form button:hover {
   cursor: pointer;
+  box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+  color: rgba(5, 33, 109, 0.638);
 }
 
 .section-fifth {
@@ -378,6 +389,7 @@ section .section-first .link-icon .social .fa-tower-cell {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .section-fifth .sec5-card .box {
   width: 423px;
@@ -386,8 +398,12 @@ section .section-first .link-icon .social .fa-tower-cell {
   background-color: #000000;
   display: flex;
   flex-direction: column;
-  padding: 54px 60px 51px 50px;
-  margin: 16px;
+  padding: 40px 20px 50px 50px;
+  margin: 0 5px 70px 5px;
+}
+.section-fifth .sec5-card .box:hover {
+  box-shadow: 5px 0px 15px 7px rgba(5, 33, 109, 0.638);
+  color: rgba(5, 33, 109, 0.638);
 }
 .section-fifth .sec5-card .box a .star {
   width: 17.11px;
@@ -412,4 +428,59 @@ section .section-first .link-icon .social .fa-tower-cell {
   font-size: 24px;
   line-height: 28.8px;
   color: #FFFFFF;
+}
+
+footer {
+  background-color: #191919;
+}
+footer .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+footer .footer {
+  display: flex;
+}
+footer .footer .social-first {
+  margin-top: 18px;
+}
+footer .footer .social-first a {
+  color: #FFFFFF;
+  margin-right: 17px;
+}
+footer .footer .logo-social {
+  margin-right: 239.38px;
+}
+footer .footer nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+  margin-bottom: 127px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+}
+footer .footer nav a {
+  color: #FFFFFF;
+}
+footer .social {
+  margin-left: 21px;
+  margin-right: 10px;
+}
+footer .social i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+footer .social .fa-brands {
+  color: green;
+}
+footer .social .fa-soundcloud {
+  color: #FF7602;
+}
+footer .social .fa-podcast {
+  color: #F452FF;
+}
+footer .social .fa-tower-cell {
+  color: #FC7E0F;
 }/*# sourceMappingURL=style.css.map */
